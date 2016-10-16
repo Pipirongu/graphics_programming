@@ -1,0 +1,7 @@
+#//MathLibrary HEADER AND SOURCE
+FILE(GLOB HEAD "*.h")
+FILE(GLOB SRC "*.cc")
+LIST(APPEND FILES_MATHLIBRARY ${HEAD} ${SRC})
+SOURCE_GROUP("mypersonalmathlibrary" FILES ${FILES_MATHLIBRARY})
+
+ADD_LIBRARY("mypersonalmathlibrary" ${FILES_MATHLIBRARY})
